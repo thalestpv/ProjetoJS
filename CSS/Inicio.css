@@ -1,0 +1,75 @@
+/*-----NavBar------*/
+.header-ul label {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    /* padding: 20px, 0px; */
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.header-ul {
+    height: 80px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(108, 181, 233);
+    justify-content: center;
+    display: flex;
+    align-items:center;
+}
+
+.header-ul li {
+    float: left;
+}
+
+.header-ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: center;
+}
+
+li a:hover {
+    height: 100px;
+    background-color: white;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.header-ul input {
+    background-color: rgb(97, 156, 199);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 20px, 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 15px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input:hover {
+    background-color: #ffffff;
+}
+
+.card{
+    background-color: #fff;
+    margin: 4px;
+    border-radius: 4px;
+    max-width: 400px;
+}
+
+.card-section{
+    padding: 10px 16px 10px  16px;
+    display: flex;
+    flex-direction: column;
+}

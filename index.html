@@ -1,68 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TecnoSolar - Energia Sustentável</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>TecnoSolar</h1>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TecnoSolar - Energia Sustentável</title>
+        <link rel="stylesheet" href="CSS/Inicio.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous">
+
+    </head>
+
+    <body>
         <nav>
-            <ul>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#simulador">Simulador</a></li>
-                <li><a href="#distribuidores">Distribuidores</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <ul class="header-ul">
+                <li><label>TecnoLog</label></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Produtos.html">Produtos</a></li>
+                <li><a href="Cadastro.html">Cadastro Vip</a></li>
+                <li><input type="button" id="Simulador" name="Simulator"
+                        value="Simulador"></li>
             </ul>
         </nav>
-    </header>
 
-    <main>
-        <section id="produtos">
-            <h2>Galeria de Produtos</h2>
-            <div class="galeria">
-                <article>
-                    <h3>Painel Solar X</h3>
-                    <p>Descrição detalhada do Painel Solar X.</p>
-                </article>
-                <article>
-                    <h3>Painel Solar Y</h3>
-                    <p>Descrição detalhada do Painel Solar Y.</p>
-                </article>
-                <article>
-                    <h3>Sistema de Energia Z</h3>
-                    <p>Descrição detalhada do Sistema de Energia Z.</p>
-                </article>
-            </div>
-        </section>
+        <<main class="flex">
+            <section id="produtos">
+                <h2>Galeria de Produtos</h2>
+                <div class="galeria">
+                    <article class="card">
+                        <div class="card-section">
+                            <h3>Painel Solar X</h3>
+                            <p>Descrição detalhada do Painel Solar X.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-section">
+                            <h3>Painel Solar Y</h3>
+                            <p>Descrição detalhada do Painel Solar Y.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-section">
+                            <h3>Sistema de Energia Z</h3>
+                            <p>Descrição detalhada do Sistema de Energia Z.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-        <section id="simulador">
-            <h2>Simulador de Consumo Energético</h2>
-            <form>
-                <label for="consumo">Digite seu consumo mensal em kWh:</label>
-                <input type="number" id="consumo" name="consumo" required>
-                <button type="submit">Simular</button>
-            </form>
-            <div id="resultado">
-                <!-- Resultados da simulação aparecerão aqui -->
-            </div>
-        </section>
+            <section class="card" id="simulador">
 
-        <section id="distribuidores">
-            <h2>Área do Distribuidor</h2>
-            <p>Acesse materiais de marketing, cadastre clientes e envie relatórios de vendas.</p>
-            <a href="login.html">Login para Distribuidores</a>
-        </section>
-    </main>
+                <div class="card-section"> <h2>Simulador de Consumo
+                        Energético</h2>
+                    <form>
+                        <label for="consumo">Digite seu consumo mensal em
+                            kWh:</label>
+                        <input type="number" id="consumo" name="consumo"
+                            required>
+                        <button type="submit">Simular</button>
+                    </form>
+                    <div id="resultado">
+                        <!-- Resultados da simulação aparecerão aqui -->
+                    </div>
+                </div></section>
 
-    <footer>
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Email: contato@tecnosolar.com.br</p>
-            <p>Telefone: (11) 1234-5678</p>
-        </section>
-    </footer>
-</body>
+            <section class="card" id="distribuidores">
+                <div class="card-section">
+                    <h2>Área do Distribuidor</h2>
+                    <p>Acesse materiais de marketing, cadastre clientes e envie
+                        relatórios de vendas.</p>
+                    <a href="login.html">Login para Distribuidores</a>
+                </div> </section>
+        </main>
+        <footer>
+            <section class="card" id="contato">
+
+                <div class="card-section"> <h2>Contato</h2>
+                    <p>Email: contato@tecnosolar.com.br</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                </div> </section>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    </body>
+
 </html>
