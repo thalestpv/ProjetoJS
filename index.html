@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="CSS/Inicio.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
 
@@ -15,13 +17,56 @@
     <nav>
         <ul class="header-ul">
             <li><img src="Imagens/parafuso.png"></li>
-            <li><label>TecnoSolar</label></li>
-            <li><a href="index.html">Inicio</a></li>
+            <li><label>TECNOSOLAR</label></li>
+            <li><a href="index.html">Início</a></li>
             <li><a href="Produtos.html">Produtos</a></li>
-            <li><a href="Cadastro.html">Cadastro Vip</a></li>
-            <li><input type="button" id="Simulador" name="Simulator" value="Simulador"></li>
+            <li><a href="Cadastro.html">Cadastro VIP</a></li>
+            <li><input type="button" id="Simulador" name="Simulator" value="Simulador de economia"></li>
         </ul>
     </nav>
+
+    <div id="menu-carousel" class="carousel slide">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#menu-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#menu-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#menu-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner error">
+            <div class="carousel-item active c-item">
+                <img src="Imagens/img1.png" class="d-block w-100 c-img" alt="Slide 1">
+                <div class="carousel-caption top-0 mt-5 d-none d-md-block">
+                    <p class="slide1-text"> Invista em painéis solares e economize enquanto protege o planeta! </p>
+                    <h1 class="slide1-title"> TecnoSolar: Energia Sustentável ao Seu Alcance </h1>
+                    <button class="btn btn-primary px-4 py-2 fs-5 mt-5"> Contatar </button>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="Imagens/img2.jpg" class="d-block w-100 c-img" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="Imagens/img3.jpg" class="d-block w-100 c-img" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#menu-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#menu-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
     <main class="flex">
         <section id="produtos">
@@ -93,6 +138,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
