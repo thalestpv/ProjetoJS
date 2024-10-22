@@ -90,8 +90,10 @@ input:hover {
     flex-direction: column;
 }
 
+
+/*-----Carrossel------*/
 .c-item{
-    height: 700px;
+    height: 650px;
 }
 
 .c-img{
@@ -100,7 +102,7 @@ input:hover {
     filter: brightness(0.4);
 }
 
-.slide1-text{
+.slide1-subtitle{
     margin: 50px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-size: 30px;
@@ -112,4 +114,37 @@ input:hover {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-size: 80px;
     font-family: "Roboto Condensed";
+}
+
+.slide2-subtitle{
+    margin: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.slide2-title{
+    margin: 50px;
+    padding-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 80px;
+    font-family: "Roboto Condensed";
+}
+
+.slide3-title{
+    margin: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 80px;
+    font-family: "Roboto Condensed";
+}
+
+.slide3-text{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 23px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*-----Info box------*/
+.info_box {
+    background-color: #e8effd;
 }
