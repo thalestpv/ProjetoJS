@@ -77,20 +77,6 @@ input:hover {
     color: #fff;
 }
 
-.card{
-    background-color: #fff;
-    margin: 4px;
-    border-radius: 4px;
-    max-width: 400px;
-}
-
-.card-section{
-    padding: 10px 16px 10px  16px;
-    display: flex;
-    flex-direction: column;
-}
-
-
 /*-----Carrossel------*/
 .c-item{
     height: 650px;
@@ -148,3 +134,23 @@ input:hover {
 .info_box {
     background-color: #e8effd;
 }
+
+
+/*-----Card de serviços------*/
+.card{
+    background-color: #fff;
+    margin: 4px;
+    border-radius: 4px;
+    max-width: 400px;
+}
+
+.card-section{
+    padding: 10px 16px 10px  16px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*-----Footer------*/
+
+
