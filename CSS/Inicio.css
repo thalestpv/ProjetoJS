@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-<<<<<<< HEAD
+
 @import url(main.css);
-=======
 
 /*-----NavBar------*/
 .header-ul img{
@@ -79,7 +78,7 @@ input:hover {
     background-color: #ffffff4f;
     color: #fff;
 }
->>>>>>> 733481ff0b05f106c146d27585e16e9776610c40
+
 
 /*-----Carrossel------*/
 .c-item{
