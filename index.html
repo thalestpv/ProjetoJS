@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TecnoSolar - Energia Sustentável</title>
-    <link rel="stylesheet" href="CSS/inicio.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        <link rel="stylesheet" href="CSS/inicio.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -21,7 +22,11 @@
             <li><a href="index.html">Início</a></li>
             <li><a href="produtos.html">Produtos</a></li>
             <li><a href="cadastro.html">Cadastro VIP</a></li>
+<<<<<<< HEAD
             <li><a href="simulador.html">Simulador de Economia</a></li>
+=======
+            <li><input type="button" id="Simulador" name="Simulator" value="Simulador de economia" onclick="window.open('Simulador.html', '_blank');"></li>
+>>>>>>> 733481ff0b05f106c146d27585e16e9776610c40
         </ul>
     </nav>
 
@@ -73,7 +78,7 @@
         </button>
     </div>
 
-    <!--Seção que fala sobre as vantagens do serviço-->
+    <!--Seção que fala sobre a empresa-->
     <div class="info_box">
         <h4> Economia Garantida </h4>
         <p> Nosso simulador permite que você saiba quanta economia vai fazer sem precisar investir. </p>
@@ -83,41 +88,58 @@
         <p> Painéis solares com tecnologia de ponta e certificações internacionais que asseguram a melhor performance para seu investimento. </p>
     </div>
 
+    <!--Cards com os serviços-->
     <main class="flex">
         <section id="produtos">
-            <h2>Galeria de Produtos</h2>
+            <h2>Nossos serviços</h2>
             <div class="galeria">
                 <article class="card">
                     <div class="card-section">
-                        <h3>Painel Solar X</h3>
-                        <p>Descrição detalhada do Painel Solar X.</p>
+                        <img src="imagens/residencia1.webp" class="resid-img">
+                        <h3> Para sua residência </h3>
+                        <p> A energia solar residencial utiliza painéis fotovoltaicos instalados no telhado para capturar a luz do sol e convertê-la em eletricidade. Essa solução permite que a casa produza sua própria energia de forma sustentável e eficiente, atendendo às necessidades diárias de consumo.</p>
+                        <button class="learn-more"> Saiba mais </button>
                     </div>
                 </article>
                 <article class="card">
                     <div class="card-section">
-                        <h3>Painel Solar Y</h3>
-                        <p>Descrição detalhada do Painel Solar Y.</p>
+                        <img src="imagens/empresa1.png" class="emp-img">
+                        <h3>Para sua empresa</h3>
+                        <p> Empresas podem utilizar energia solar para abastecer suas operações, seja em galpões industriais, escritórios ou lojas. A instalação dos painéis é planejada de acordo com o espaço disponível, otimizando a geração de eletricidade durante o horário comercial. </p>
+                        <button class="learn-more"> Saiba mais </button>
                     </div>
                 </article>
                 <article class="card">
                     <div class="card-section">
-                        <h3>Sistema de Energia Z</h3>
-                        <p>Descrição detalhada do Sistema de Energia Z.</p>
+                        <img src="imagens/agricultura1.jpg" class="agric-img">
+                        <h3> Para seu agronegócio </h3>
+                        <p> No agronegócio, a energia solar pode ser utilizada para alimentar sistemas de irrigação, bombeamento de água e equipamentos agrícolas. Com instalações adaptadas ao ambiente rural, essa tecnologia garante fornecimento constante de energia em áreas remotas. </p>
+                        <button class="learn-more"> Saiba mais </button>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section class="card" id="simulador">
-
-            <div class="card-section">
-                <h2>Simulador de Consumo
-                    Energético</h2>
-                <form>
-                    <label for="consumo">Digite seu consumo mensal em
-                        kWh:</label>
-                    <input type="number" id="consumo" name="consumo" required>
-                    <button type="submit">Simular</button>
+        <!--Simulador de economia-->
+        <section class="form" id="simulador">
+                <form id="simulator-form">
+                    <h2> Simulador de Consumo Energético </h2> 
+                    <div class="input-box">
+                        <label for="consumo"> Qual seu gasto médio mensal na conta de luz? </label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-bolt"></i>
+                            <input type="number" id="consumo" required>
+                            <span> $ </span>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label for="localização"> Onde pretende realizar a instalação? </label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="text" id="localização" required>
+                        </div>
+                    </div>
+                    <button id="simular" type="submit">Simular</button>
                 </form>
                 <div id="resultado">
                     <!-- Resultados da simulação aparecerão aqui -->
@@ -125,6 +147,7 @@
             </div>
         </section>
 
+        <!--Cadastro dos distribuidores-->
         <section class="card" id="distribuidores">
             <div class="card-section">
                 <h2>Área do Distribuidor</h2>
@@ -136,7 +159,6 @@
     </main>
     <footer>
         <section class="card" id="contato">
-
             <div class="card-section">
                 <h2>Contato</h2>
                 <p>Email: contato@tecnosolar.com.br</p>
