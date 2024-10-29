@@ -1,6 +1,4 @@
-
-/*-----NavBar------*/
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
@@ -59,6 +57,7 @@ body{
     justify-content: center;
 }
 
+
 li a:hover {
     height: 80px;
     background-color: rgba(255, 255, 255, 0.438);
@@ -87,17 +86,4 @@ li a:hover {
 input:hover {
     background-color: #ffffff4f;
     color: #fff;
-}
-
-.card{
-    background-color: #fff;
-    margin: 4px;
-    border-radius: 4px;
-    max-width: 400px;
-}
-
-.card-section{
-    padding: 10px 16px 10px  16px;
-    display: flex;
-    flex-direction: column;
 }

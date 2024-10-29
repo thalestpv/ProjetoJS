@@ -1,84 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import url(main.css);
-
-/*-----NavBar------*/
-.header-ul img{
-    width: 60px; 
-    height: 60px; 
-}
-
-.header-ul label {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    /* padding: 20px, 0px; */
-    text-decoration: none;
-    font-size: 25px;
-    margin-right: 50px;
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: bolder;
-    padding-top: 10px;
-}
-
-.header-ul {
-    height: 80px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: linear-gradient(#558cfc, #2f6ef8);
-    justify-content: center;
-    display: flex;
-    align-items:center;
-    
-}
-
-.header-ul li {
-    float: left;
-    font-family: "Roboto Condensed";
-}
-
-.header-ul li a {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 20px 30px;
-    text-decoration: none;
-    font-size: 20px;
-    justify-content: center;
-}
-
-li a:hover {
-    height: 80px;
-    background-color: rgba(255, 255, 255, 0.438);
-    color: #fff;
-}
-
-.active {
-    background-color: #04AA6D;
-}
-
-.header-ul input {
-    background-color: rgb(50, 101, 211);
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 15px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-input:hover {
-    background-color: #ffffff4f;
-    color: #fff;
-}
-
+@import url('./main.css');
 
 /*-----Carrossel------*/
 .c-item{
@@ -155,5 +76,3 @@ input:hover {
 
 
 /*-----Footer------*/
-
-
