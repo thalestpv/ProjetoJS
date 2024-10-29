@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Produtos - TecnoSolar </title>
-    <link rel="stylesheet" href="CSS/produtos.css">
+    <title> Simulador - TecnoSolar </title>
+    <link rel="stylesheet" href="CSS/Simulador.css">
 </head>
 <body>
     <nav>
@@ -13,8 +13,32 @@
             <li><label>TECNOSOLAR</label></li>
             <li><a href="index.html">Início</a></li>
             <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="cadastro.html">Cadastro VIP</a></li>
-            <li><input type="button" id="Simulador" name="Simulator" value="Simulador de economia"></li>
+            <li><a href="Cadastro.html">Cadastro VIP</a></li>
+            <li>
+                <a href="Simulador.html">Simulador de economia</a>
+            </li>
         </ul>
+
+        <div class="container">
+            <h1>Simulador de consumo de energia</h1>
+
+            <label for="equipamento">Equipamento</label>
+            <select id="equipamento">
+                <option value="0">Selecione</option>
+                <option value="1500"> Ar-condicionado(1500W)</option>
+                <option value="120">Geladeira(120W)</option>
+                <option value="60">Lâmpada LED(60W)</option>
+                <option value="2000">Chuveiro Elétrico(2000W)</option>
+            </select>
+
+            <label for="horas">Horas de usa por dia</label>
+            <input type="number" id="horas" placeholder="horas de uso">
+
+            <button onclick="calcularConsumo()">Calcular Consumo</button>
+
+            <div id="resultado"></div>
+
+            <script src="Script/simulador.js"></script>
+        </div>
 </body>
 </html>
