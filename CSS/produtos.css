@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url('./main.css');
-<<<<<<< HEAD
 
 .card{
     background-color: #fff;
@@ -57,5 +56,4 @@
     background-color: #e7f3fe; 
     cursor: pointer;
     }
-=======
->>>>>>> 809aeee0c3d6bb404a50fdab0932b41b0f0578c5
+
