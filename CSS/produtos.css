@@ -15,46 +15,69 @@
     flex-direction: column;
 }
 
-#areaProdutos {
-    width: 90%; 
-    margin: auto; 
-    padding: 20px; 
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    background-color: #f9f9f9; 
+.body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+   
     }
-    
-    table {
-    width: 100%; 
-    border-collapse: collapse; 
-    }
-    
-    td {
-    text-align: center; 
-    vertical-align: top; 
-    }
-    
-    img {
-    max-width: 100%; 
-    height: auto; 
-    }
-    
-    .tituloProduto {
-    font-size: 1.2em; 
-    font-weight: bold; 
-    margin: 10px 0;
-    }
-    
-    .precoProduto {
-    font-size: 1em;
-    color: #2C3E50; 
-    margin: 5px 0; 
-    }
-    
-  
-    td:hover {
-    background-color: #e7f3fe; 
+    .tabs {
+    display: flex;
     cursor: pointer;
+    padding-bottom: 10px;
+    
+    }
+    .tab {
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+    .tab.active {
+    background-color: #007BFF;
+    color: white;
+    }
+    .content {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    display: none;
+    background-color: white;
+    }
+    .content.active {
+    display: block;
     }
 
-/* Card-Produto */
+    .body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    }
+    .produto {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    }
+    .botao-carrinho {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    }
+    .botao-carrinho:hover {
+        background-color: #218838;
+    }
+
+    /*-----Footer------*/
+footer {
+    background-color: #f1f1f1; 
+    text-align: center; 
+    padding: 20px; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    }

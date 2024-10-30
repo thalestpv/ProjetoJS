@@ -69,3 +69,13 @@ select, input{
     input[type="submit"]:hover {
     background: #218838;
     }
+
+    /*-----Footer------*/
+footer {
+    background-color: #f1f1f1; 
+    text-align: center; 
+    padding: 20px; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    }

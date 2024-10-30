@@ -21,10 +21,12 @@
             <li><label>TECNOSOLAR</label></li>
             <li><a href="inicio.html">Início</a></li>
             <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="cadastro.html">Cadastro VIP</a></li>
+            <li><a href="Cadastro.html">Cadastro VIP</a></li>
+            <li><a href="contato.html">Contato</a></li>
             <li>
-                <a href="simulador.html">Simulador de economia</a>
+                <a href="Simulador1.html">Simulador de economia</a>
             </li>
+            <li><a href="carrinho.html">Carrinho</a></li>
         </ul>
     </nav>
 
@@ -44,7 +46,7 @@
                 <div class="carousel-caption top-0 mt-5 d-none d-md-block">
                     <p class="slide1-subtitle"> Invista em painéis solares e economize enquanto protege o planeta. </p>
                     <h1 class="slide1-title"> TecnoSolar: Energia Sustentável ao Seu Alcance! </h1>
-                    <button class="btn btn-primary px-4 py-2 fs-5 mt-5"> Contatar </button>
+                    <button class="btn btn-primary px-4 py-2 fs-5 mt-4"> Contatar </button>
                 </div>
             </div>
             <div class="carousel-item c-item">
@@ -78,12 +80,14 @@
 
     <!--Seção que fala sobre a empresa-->
     <div class="info_box">
-        <h4> Economia Garantida </h4>
-        <p> Nosso simulador permite que você saiba quanta economia vai fazer sem precisar investir. </p>
-        <h4> Projetos sob Medida </h4>
-        <p> Contamos com profissionais altamente qualificados para realizar o projeto do seu imóvel. </p>
-        <h4> A melhor opção do mercado</h4>
-        <p> Painéis solares com tecnologia de ponta e certificações internacionais que asseguram a melhor performance para seu investimento. </p>
+        <h4>Nossa Missão</h4>
+            <p>Simplificar o acesso à energia solar, oferecendo soluções personalizadas e intuitivas que permitam a nossos clientes gerarem sua própria energia de forma eficiente e econômica, reduzindo seu impacto ambiental.</p>
+        <h4>Nossos Valores</h4>
+            <p><b>Inovação:</b> Buscar constantemente novas tecnologias e soluções para oferecer produtos e serviços inovadores.<br>
+            <b>Sustentabilidade:</b> Promover e incentivar o uso de fontes de energia renováveis e reduzir o impacto ambiental de nossas operações.<br>
+            <b>Transparência:</b> Manter relações claras e honestas com nossos clientes, parceiros e colaboradores.<br>
+            <b>Simplicidade:</b> Oferecer produtos e serviços fáceis de entender e utilizar, com foco na experiência do cliente.<br>
+            <b>Excelência:</b> Buscar a excelência em tudo o que fazemos, desde o início da produção até o atendimento ao cliente.</p><br>
     </div>
 
     <!--Cards com os serviços-->
@@ -96,7 +100,8 @@
                         <img src="imagens/residencia1.webp" class="resid-img">
                         <h3> Para sua residência </h3>
                         <p> A energia solar residencial utiliza painéis fotovoltaicos instalados no telhado para capturar a luz do sol e convertê-la em eletricidade. Essa solução permite que a casa produza sua própria energia de forma sustentável e eficiente, atendendo às necessidades diárias de consumo.</p>
-                        <button class="learn-more"> Saiba mais </button>
+                        <a href="Produtos.html#residential">
+                        <button class="learn-more"> Saiba mais </button></a>
                     </div>
                 </article>
                 <article class="card">
@@ -104,7 +109,10 @@
                         <img src="imagens/empresa1.png" class="emp-img">
                         <h3>Para sua empresa</h3>
                         <p> Empresas podem utilizar energia solar para abastecer suas operações, seja em galpões industriais, escritórios ou lojas. A instalação dos painéis é planejada de acordo com o espaço disponível, otimizando a geração de eletricidade durante o horário comercial. </p>
-                        <button class="learn-more"> Saiba mais </button>
+                        <a href="Produtos.html#business">
+                        <button class="learn-more"> Saiba mais </button></a>
+                        
+
                     </div>
                 </article>
                 <article class="card">
@@ -112,58 +120,16 @@
                         <img src="imagens/agricultura1.jpg" class="agric-img">
                         <h3> Para seu agronegócio </h3>
                         <p> No agronegócio, a energia solar pode ser utilizada para alimentar sistemas de irrigação, bombeamento de água e equipamentos agrícolas. Com instalações adaptadas ao ambiente rural, essa tecnologia garante fornecimento constante de energia em áreas remotas. </p>
-                        <button class="learn-more"> Saiba mais </button>
+                        <a href="Produtos.html#agrobusiness">
+                        <button class="learn-more"> Saiba mais </button></a>
                     </div>
                 </article>
             </div>
         </section>
 
-        <!--Simulador de economia-->
-        <section class="form" id="simulador">
-                <form id="simulator-form">
-                    <h2> Simulador de Consumo Energético </h2> 
-                    <div class="input-box">
-                        <label for="consumo"> Qual seu gasto médio mensal na conta de luz? </label>
-                        <div class="input-field">
-                            <i class="fa-solid fa-bolt"></i>
-                            <input type="number" id="consumo" required>
-                            <span> $ </span>
-                        </div>
-                    </div>
-                    <div class="input-box">
-                        <label for="localização"> Onde pretende realizar a instalação? </label>
-                        <div class="input-field">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <input type="text" id="localização" required>
-                        </div>
-                    </div>
-                    <button id="simular" type="submit">Simular</button>
-                </form>
-                <div id="resultado">
-                    <!-- Resultados da simulação aparecerão aqui -->
-                </div>
-            </div>
-        </section>
-
-        <!--Cadastro dos distribuidores-->
-        <section class="card" id="distribuidores">
-            <div class="card-section">
-                <h2>Área do Distribuidor</h2>
-                <p>Acesse materiais de marketing, cadastre clientes e envie
-                    relatórios de vendas.</p>
-                <a href="login.html">Login para Distribuidores</a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <section class="card" id="contato">
-            <div class="card-section">
-                <h2>Contato</h2>
-                <p>Email: contato@tecnosolar.com.br</p>
-                <p>Telefone: (11) 1234-5678</p>
-            </div>
-        </section>
-    </footer>
+        <footer class="footer">
+            <p>© 2024 TecnoSolar. Todos os direitos reservados.</p>
+        </footer>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
