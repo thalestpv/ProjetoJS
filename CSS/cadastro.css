@@ -19,12 +19,12 @@ label{
     display: block;
     margin-top: 10px;
 }
-/* body {
+body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
-    } */
+    }
     .container {
     max-width: 600px;
     margin: auto;
@@ -59,7 +59,24 @@ label{
     transform: scale(1.05);
     }
 
-   
+   .Nome{
+    max-width: 400px;
+    box-sizing: content-box;
+    font-size: 16px;
+   }
+
+   .DT_Nascimento{
+    width: 67%;
+    padding: 10px;
+    color: #333;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+   }
+    .number{
+        max-width: 400px;
+        font-size: 16px;
+    }
     /*-----Footer------*/
 footer {
     background-color: #f1f1f1; 

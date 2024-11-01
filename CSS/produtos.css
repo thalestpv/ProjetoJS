@@ -2,82 +2,154 @@
 
 @import url('./main.css');
 
-.card{
-    background-color: #fff;
-    margin: 4px;
-    border-radius: 4px;
-    max-width: 400px;
+/* navbar lateral */
+
+
+.menu-hamburguer {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 2;
 }
 
-.card-section{
-    padding: 10px 16px 10px  16px;
+.menu-hamburguer .linha {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Navbar lateral */
+.navbar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s;
+    padding-top: 60px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    padding: 15px 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+    padding: 15px 20px;
+    display: block;
+}
+
+/* Navbar ativa */
+.navbar.ativo {
+    left: 0;
+}
+
+
+/* card de compras */
+
+.conteiner{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap; 
 }
 
-.body {
+.card {
     background-color: #fff;
-    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    margin: 10px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px 10px 15px 10px;
+}
+
+.card-title {
+    font-size: 1.5em;
     margin: 0;
-    padding: 20px;
-   
-    }
-    .tabs {
+}
+
+.card-description {
+    color: #666;
+    margin: 10px 0;
+}
+
+.card-price {
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+
+.card-button {
+    background-color: #007BFF ;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.card-button:hover {
+    background-color: #5581b0;
+}
+
+.tabs {
     display: flex;
     cursor: pointer;
     padding-bottom: 10px;
-    
-    }
-    .tab {
+
+}
+
+.tab {
     margin-right: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     border-radius: 5px;
-    }
-    .tab.active {
+}
+
+.tab.active {
     background-color: #007BFF;
     color: white;
-    }
-    .content {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
+}
+
+.content {
+    border-radius: 10px;
+    padding: 100px ;
     display: none;
     background-color: white;
-    }
-    .content.active {
-    display: block;
-    }
+}
 
-    .body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    }
-    .produto {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    }
-    .botao-carrinho {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    }
-    .botao-carrinho:hover {
-        background-color: #218838;
-    }
+.content.active {
+    display: flex;
+}
 
-    /*-----Footer------*/
+/* footer */
 footer {
-    background-color: #f1f1f1; 
-    text-align: center; 
-    padding: 20px; 
-    position: relative; 
-    bottom: 0; 
-    width: 100%; 
-    }
+    background-color: #f1f1f1;
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
