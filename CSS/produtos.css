@@ -4,7 +4,7 @@
 
 /* navbar lateral */
 
-
+/* Menu hamburguer */
 .menu-hamburguer {
     position: fixed;
     top: 20px;
@@ -26,18 +26,21 @@
     position: fixed;
     left: -250px;
     top: 0;
-    width: 250px;
+    width: 150px;
     height: 100%;
-    background-color: #333;
+    background-color: #558cfc;
     transition: left 0.3s;
     padding-top: 60px;
 }
 
-.navbar ul {
+.navbar .header-ul-lateral {
     list-style: none;
 }
 
-.navbar ul li {
+.navbar .tabs .tab.active {
+    padding: 15px 20px;
+}
+.navbar .tabs .tab {
     padding: 15px 20px;
 }
 
@@ -47,7 +50,7 @@
     font-size: 18px;
 }
 
-.navbar ul li a:hover {
+.navbar :hover {
     background-color: #555;
     padding: 15px 20px;
     display: block;
