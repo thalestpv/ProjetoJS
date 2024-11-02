@@ -28,7 +28,7 @@
         <div class="linha"></div>
     </div>
 
-    <nav id="navbar" class="navbar" >
+    <nav id="navbar" class="navbar">
         <ul class="header-ul-lateral">
             <div class="tabs">
                 <div class="tab active" onclick="showTab('residential')">Residencial</div>
@@ -37,7 +37,7 @@
             </div>
         </ul>
     </nav>
-
+    <!-- Residencial -->
     <div class="conteiner">
         <div id="residential" class="content active">
             <div class="card">
@@ -77,87 +77,90 @@
                 </div>
             </div>
         </div>
-
-
+        <!-- Empresarial -->
         <div id="business" class="content">
-            <h3>Para sua empresa:</h3>
-            <ul>
-                <div class="produto">
-                    <img src="imagens/Produtos/16,20 kWp.jpg" class="emp-img">
-                    <h2>Empresarial - 16,20 kWp</h2>
-                    <!-- <p>Com uma potência instalada de 16,20 kWp, o sistema fotovoltaico instalado sobre o telhado de
-                    fibrocimento, produzirá mensalmente cerca de 1.950,00 kWh de energia elétrica para o condomínio.
-                    Homologada pela NEO Energia, esta instalação fotovoltaica é composta por 36 painéis solares de 450Wp
-                    da marca JINKO – proveniente da China – e um inversor de 15 KW, trifásico, da marca GROWATT – China.
-                </p><br> -->
-                    <p>Preço: R$ 100,00</p>
-                    <button class="botao-carrinho" onclick="adicionarAoCarrinho('Produto 1')">Adicionar ao
-                        Carrinho</button>
+            <div class="card">
+                <img src="imagens/Produtos/16,20 kWp.jpg" alt="Produto 1" class="card-img">
+                <div class="card-body">
+                    <h2 class="card-title">Altere titulo</h2>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <span class="card-price">R$ 2599,99</span>
+                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
                 </div>
-
-                <div class="produto">
-                    <img src="imagens/Produtos/24,64.jpg" class="emp-img">
-                    <h2>Empresarial - 24,64 kWp</h2>
-                    <!-- <p>Com uma potência instalada de 24,64 kWp, o sistema fotovoltaico instalado sobre o telhado de
-                    fibrocimento, produzirá mensalmente cerca de 3.000,00 kWh de energia elétrica para a empresa.
-                    Homologada pela NEO Energia, esta instalação fotovoltaica é composta por 56 painéis solares de 440Wp
-                    da marca JINKO – proveniente da China – e um inversor de 20 KW, trifásico, da marca GROWATT – China.
-                </p><br> -->
-                    <p>Preço: R$ 150,00</p>
-                    <button class="botao-carrinho" onclick="adicionarAoCarrinho('Produto 2')">Adicionar ao
-                        Carrinho</button>
+            </div>
+            <div class="card">
+                <img src="imagens/Produtos/24,64.jpg" alt="Produto 2" class="card-img">
+                <div class="card-body">
+                    <h2 class="card-title">Altere titulo</h2>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <span class="card-price">R$ 3999,99</span>
+                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
                 </div>
-
-                <div class="produto">
-                    <img src="imagens/Produtos/39,20 kWp.jpg" class="emp-img">
-                    <h2>Empresarial - 39,20 kWp</h2>
-                    <!-- <p>Com uma potência instalada de 39,20 kWp, o sistema fotovoltaico instalado sobre o telhado metálico,
-                    produzirá mensalmente cerca de 4.500,00 kWh de energia elétrica para o clube. Homologada pela NEO
-                    Energia, esta instalação fotovoltaica é composta por 112 painéis solares de 350Wp da fabricante
-                    CANADIAN – proveniente do Canadá –, além de um inversor de 25 KW, trifásico, da fabricante DEYE –
-                    China – e um inversor KSTAR de 12 KW, trifásico, da fabricante KSTAR.</p><br> -->
-                    <p>Preço: R$ 150,00</p>
-                    <button class="botao-carrinho" onclick="adicionarAoCarrinho('Produto 2')">Adicionar ao
-                        Carrinho</button>
+            </div>
+            <div class="card">
+                <img src="imagens/Produtos/39,20 kWp.jpg" alt="Produto 3" class="card-img">
+                <div class="card-body">
+                    <h2 class="card-title">Altere titulo</h2>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <span class="card-price">R$ 1499,99</span>
+                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
                 </div>
-            </ul>
+            </div>
         </div>
-
+        <!-- Agronomia -->
         <div id="agribusiness" class="content">
-            <h3>Para o seu agronegócio:</h3>
-            <ul>
-                <div class="produto">
-                    <img src="imagens/Produtos/agro 2.jpg" class="emp-img">
-                    <h2>Sistema fotovoltaico off grid</h2>
-                    <!-- <p>Não é conectado à rede de distribuição. No lugar disso, ele faz uso de baterias. A energia excedente
-                    gerada pelos painéis solares é armazenada para poder ser utilizada em outro momento (como à noite,
-                    quando não há luz solar).
-                    As baterias são caras, tornando o sistema off grid pouco acessível. Além disso, ele necessita de
-                    manutenção mais frequente. É recomendado apenas para lugares nos quais não há rede de distribuição
-                    local.</p><br> -->
-                    <p>Preço: R$ 100,00</p>
-                    <button class="botao-carrinho" onclick="adicionarAoCarrinho('Produto 1')">Adicionar ao
-                        Carrinho</button>
+            <div class="card">
+                <img src="Imagens/agricultura1.jpg" alt="Produto 1" class="card-img">
+                <div class="card-body">
+                    <h2 class="card-title">Altere titulo</h2>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <span class="card-price">R$ 2599,99</span>
+                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
                 </div>
-
-                <div class="produto">
-                    <img src="imagens/Produtos/agro 3.jpg" class="emp-img">
-                    <h2>Sistema on grid</h2>
-                    <!-- <p>seu sistema fotovoltaico é conectado com a rede da distribuidora local. Isso torna possível a
-                    transferência de energia excedente gerada para a rede local, que é restituída em forma de créditos
-                    energéticos para compensar na sua conta de luz os momentos em que for necessário consumir a energia
-                    da rede, pois não há irradiação solar</p><br> -->
-                    <p>Preço: R$ 150,00</p>
-                    <button class="botao-carrinho" onclick="adicionarAoCarrinho('Produto 2')">Adicionar ao
-                        Carrinho</button>
+            </div>
+            <div class="card">
+                <img src="imagens/Produtos/agro 2.jpg" alt="Produto 2" class="card-img">
+                <div class="card-body">
+                    <h2 class="card-title">Altere titulo</h2>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <span class="card-price">R$ 3999,99</span>
+                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
                 </div>
-        </div>
+            </div>
+            <div class="card">
+                <img src="imagens/Produtos/agro 3.jpg" alt="Produto 3" class="card-img">
+                <div class="card-body">
+                    <h2 class="card-title">Altere titulo</h2>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <p class="card-description">-altere aqui</p>
+                    <span class="card-price">R$ 1499,99</span>
+                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <script src="Script/Produto.js"></script>
 
-        <script src="Script/Produto.js"></script>
-
-        <footer class="footer">
-            <p>© 2024 TecnoSolar. Todos os direitos reservados.</p>
-        </footer>
+    <footer class="footer">
+        <p>© 2024 TecnoSolar. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>
