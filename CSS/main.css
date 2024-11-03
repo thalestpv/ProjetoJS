@@ -17,7 +17,7 @@ body {
 
 .header-ul label {
     display: block;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255,255);
     text-align: center;
     /* padding: 20px, 0px; */
     text-decoration: none;
@@ -25,7 +25,7 @@ body {
     margin-right: 50px;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bolder;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 .header-ul {
