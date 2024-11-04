@@ -8,26 +8,34 @@
 
 .conteiner{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap; 
+    align-items: baseline;
 }
 
 .card {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
     width: 300px;
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:0;
 }
 
 .card-img {
     width: 100%;
-    height: auto;
+    height: 180px;
 }
 
 .card-body {
     padding: 15px 10px 15px 10px;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+    height: auto;
+   
 }
 
 .card-title {
@@ -37,7 +45,8 @@
 
 .card-description {
     color: #666;
-    margin: 10px 0;
+    margin: auto;
+    text-align: center;
 }
 
 .card-price {
