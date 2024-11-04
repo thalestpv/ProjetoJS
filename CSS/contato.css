@@ -85,18 +85,21 @@ input[type="submit"]:hover {
 
 /* Título e descrição */
 h1 {
+  margin: auto;
   text-align: center;
   margin-top: 2rem;
   font-size: 2rem;
   color: #004aad;
 }
 .contato-L{
+  margin: auto;
   text-align: center;
   margin-top: 2rem;
   font-size: 2rem;  
 }
         
 p {
+  margin: auto;
   text-align: center;
   margin: 1rem 2rem;
   font-size: 1rem;
@@ -139,7 +142,7 @@ form {
   display: flex;
   flex-direction: column;
   max-width: 600px;
-  margin: 2rem auto;
+  margin: auto;
   background-color: #ffffff;
   padding: 2rem;
   border-radius: 8px;
@@ -148,15 +151,14 @@ form {
 
 /* Seção de contato */
 
-/* .contato {
-max-width: 300px;
-padding: 1rem;
-background-color: #f9f9f9;
+.contato {
+max-width: 800px;
+padding: 60px;
 border-radius: 8px;
 margin: 2rem auto; 
 font-size: 1rem;
 color: #555;
-} */
+}
 
 .contato p b {
   color: #004aad;
