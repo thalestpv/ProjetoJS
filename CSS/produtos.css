@@ -2,64 +2,6 @@
 
 @import url('./main.css');
 
-/* navbar lateral */
-
-/* Menu hamburguer */
-.menu-hamburguer {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.menu-hamburguer .linha {
-    width: 30px;
-    height: 4px;
-    background-color: black;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-/* Navbar lateral */
-.navbar {
-    position: fixed;
-    left: -250px;
-    top: 0;
-    width: 150px;
-    height: 100%;
-    background-color: #558cfc;
-    transition: left 0.3s;
-    padding-top: 60px;
-}
-
-.navbar .header-ul-lateral {
-    list-style: none;
-}
-
-.navbar .tabs .tab.active {
-    padding: 15px 20px;
-}
-.navbar .tabs .tab {
-    padding: 15px 20px;
-}
-
-.navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.navbar :hover {
-    background-color: #558cfc;
-    padding: 15px 20px;
-    display: block;
-}
-
-/* Navbar ativa */
-.navbar.ativo {
-    left: 0;
-}
 
 
 /* card de compras */
@@ -146,13 +88,4 @@
 
 .content.active {
     display: flex;
-}
-
-/* footer */
-footer {
-    background-color: #f1f1f1;
-    padding: 5px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }

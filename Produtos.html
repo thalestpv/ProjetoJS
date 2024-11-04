@@ -1,166 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Produtos - TecnoSolar </title>
-    <link rel="stylesheet" href="CSS/produtos.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Produtos - TecnoSolar </title>
+        <link rel="stylesheet" href="CSS/produtos.css">
+    </head>
 
-<body>
-    <nav>
-        <ul class="header-ul">
-            <li><img src="imagens/parafuso.png"></li>
-            <li><label>TECNOSOLAR</label></li>
-            <li><a href="inicio.html">Início</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="Cadastro.html">Cadastro VIP</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li> <a href="Simulador1.html">Simulador de economia</a></li>
-            <li><a href="carrinho.html">Carrinho</a></li>
-        </ul>
-    </nav>
+    <body>
+        <nav>
+            <ul class="header-ul">
+                <li><img src="imagens/parafuso.png"></li>
+                <li><label>TECNOSOLAR</label></li>
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="Cadastro.html">Cadastro VIP</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li> <a href="Simulador1.html">Simulador de economia</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+        
+        <div class="tabs">
+            <div class="tab active"
+                onclick="showTab('residential')">Residencial</div>
+            <div class="tab" onclick="showTab('business')">Empresarial</div>
+            <div class="tab" onclick="showTab('agribusiness')">Agronegócio</div>
+        </div>
 
-    <div class="menu-hamburguer" onclick="toggleMenu()">
-        <div class="linha"></div>
-        <div class="linha"></div>
-        <div class="linha"></div>
-    </div>
-
-    <nav id="navbar" class="navbar">
-        <ul class="header-ul-lateral">
-            <div class="tabs">
-                <div class="tab active" onclick="showTab('residential')">Residencial</div>
-                <div class="tab" onclick="showTab('business')">Empresarial</div>
-                <div class="tab" onclick="showTab('agribusiness')">Agronegócio</div>
-            </div>
-        </ul>
-    </nav>
-    <!-- Residencial -->
-    <div class="conteiner">
-        <div id="residential" class="content active">
-            <div class="card">
-                <img src="Imagens/Produtos/335-kWp01-2.jpg  " alt="Produto 1" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Residencial - 3,35Kwp</h2>
-                    <p class="card-description">-potencia de 3,35Kwp</p>
-                    <p class="card-description">-instalado em solo</p>
-                    <p class="card-description">-485 Kwh de energia</p>
-                    <p class="card-description">-10 paines solares de 335Wp</p>
-                    <span class="card-price">R$ 2599,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
+        <!-- Residencial -->
+        <div class="conteiner">
+            <div id="residential" class="content active">
+                <div class="card">
+                    <img src="Imagens/Produtos/335-kWp01-2.jpg  "
+                        alt="Produto 1" class="card-img">
+                    <div class="card-body">
+                        <h2 class="card-title">Residencial - 3,35Kwp</h2>
+                        <p class="card-description">-potencia de 3,35Kwp</p>
+                        <p class="card-description">-instalado em solo</p>
+                        <p class="card-description">-485 Kwh de energia</p>
+                        <p class="card-description">-10 paines solares de
+                            335Wp</p>
+                        <span class="card-price">R$ 2599,99</span>
+                        <button class="card-button"
+                            onclick="addToCart()">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Imagens/Produtos/1035-kWp01.jpg" alt="Produto 2"
+                        class="card-img">
+                    <div class="card-body">
+                        <h2 class="card-title">Residencial - 10,35 kWp</h2>
+                        <p class="card-description">-de 10,35Kwp</p>
+                        <p class="card-description">-instalado no telhado</p>
+                        <p class="card-description">-1210,00 Kwh de energia</p>
+                        <p class="card-description">-23 paines solares de
+                            450Wp</p>
+                        <span class="card-price">R$ 3999,99</span>
+                        <button class="card-button"
+                            onclick="addToCart()">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Imagens/Produtos/residencial.jpg" alt="Produto 3"
+                        class="card-img">
+                    <div class="card-body">
+                        <h2 class="card-title">Residencial - 0,855 kWp</h2>
+                        <p class="card-description">-potencia de 0,855Kwp</p>
+                        <p class="card-description">- off grid</p>
+                        <p class="card-description">-Economia de energia</p>
+                        <p class="card-description">-Descrição a mais</p>
+                        <span class="card-price">R$ 1499,99</span>
+                        <button class="card-button"
+                            onclick="addToCart()">Adicionar ao Carrinho</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="Imagens/Produtos/1035-kWp01.jpg" alt="Produto 2" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Residencial - 10,35 kWp</h2>
-                    <p class="card-description">-de 10,35Kwp</p>
-                    <p class="card-description">-instalado no telhado</p>
-                    <p class="card-description">-1210,00 Kwh de energia</p>
-                    <p class="card-description">-23 paines solares de 450Wp</p>
-                    <span class="card-price">R$ 3999,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
+            <!-- Empresarial -->
+            <div id="business" class="content">
+                <div class="card">
+                    <img src="imagens/Produtos/16,20 kWp.jpg" alt="Produto 1"
+                        class="card-img">
+                    <div class="card-body">
+                        <h2 class="card-title">Altere titulo</h2>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <span class="card-price">R$ 2599,99</span>
+                        <button class="card-button"
+                            onclick="addToCart()">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/Produtos/24,64.jpg" alt="Produto 2"
+                        class="card-img">
+                    <div class="card-body">
+                        <h2 class="card-title">Altere titulo</h2>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <span class="card-price">R$ 3999,99</span>
+                        <button class="card-button"
+                            onclick="addToCart()">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/Produtos/39,20 kWp.jpg" alt="Produto 3"
+                        class="card-img">
+                    <div class="card-body">
+                        <h2 class="card-title">Altere titulo</h2>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <span class="card-price">R$ 1499,99</span>
+                        <button class="card-button"
+                            onclick="addToCart()">Adicionar ao Carrinho</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="Imagens/Produtos/residencial.jpg" alt="Produto 3" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Residencial - 0,855 kWp</h2>
-                    <p class="card-description">-potencia de 0,855Kwp</p>
-                    <p class="card-description">- off grid</p>
-                    <p class="card-description">-Economia de energia</p>
-                    <p class="card-description">-Descrição a mais</p>
-                    <span class="card-price">R$ 1499,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
+            <!-- Agronomia -->
+            <div id="agribusiness" class="content">
+                <div class="card">
+                    <img src="Imagens/agricultura1.jpg" alt="Produto 1"
+                        class="card-img">
+                    <div class="card-body">
+                        <h2 class="card-title">Altere titulo</h2>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <span class="card-price">R$ 2599,99</span>
+                        <button class="card-button"
+                            onclick="addToCart()">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/Produtos/agro 2.jpg" alt="Produto 2"
+                        class="card-img">
+                    <div class="card-body">
+                        <h2 class="card-title">Altere titulo</h2>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <span class="card-price">R$ 3999,99</span>
+                        <button class="card-button"
+                            onclick="addToCart()">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/Produtos/agro 3.jpg" alt="Produto 3"
+                        class="card-img">
+                    <div class="card-body">
+                        <h2 class="card-title">Altere titulo</h2>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <p class="card-description">-altere aqui</p>
+                        <span class="card-price">R$ 1499,99</span>
+                        <button class="card-button"
+                            onclick="addToCart()">Adicionar ao Carrinho</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Empresarial -->
-        <div id="business" class="content">
-            <div class="card">
-                <img src="imagens/Produtos/16,20 kWp.jpg" alt="Produto 1" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Altere titulo</h2>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <span class="card-price">R$ 2599,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imagens/Produtos/24,64.jpg" alt="Produto 2" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Altere titulo</h2>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <span class="card-price">R$ 3999,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imagens/Produtos/39,20 kWp.jpg" alt="Produto 3" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Altere titulo</h2>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <span class="card-price">R$ 1499,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-        </div>
-        <!-- Agronomia -->
-        <div id="agribusiness" class="content">
-            <div class="card">
-                <img src="Imagens/agricultura1.jpg" alt="Produto 1" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Altere titulo</h2>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <span class="card-price">R$ 2599,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imagens/Produtos/agro 2.jpg" alt="Produto 2" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Altere titulo</h2>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <span class="card-price">R$ 3999,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imagens/Produtos/agro 3.jpg" alt="Produto 3" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Altere titulo</h2>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <p class="card-description">-altere aqui</p>
-                    <span class="card-price">R$ 1499,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-        </div>  
-    </div>
-    <script src="Script/Produto.js"></script>
+        <script src="Script/Produto.js"></script>
 
-    <footer class="footer">
-        <p>© 2024 TecnoSolar. Todos os direitos reservados.</p>
-    </footer>
-</body>
+        <footer class="footer">
+            <p>© 2024 TecnoSolar. Todos os direitos reservados.</p>
+        </footer>
+    </body>
 
 </html>
