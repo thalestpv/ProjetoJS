@@ -21,7 +21,7 @@
                 <li><a href="carrinho.html">Carrinho</a></li>
             </ul>
         </nav>
-        
+
         <div class="tabs">
             <div class="tab active"
                 onclick="showTab('residential')">Residencial</div>
@@ -29,7 +29,6 @@
             <div class="tab" onclick="showTab('agribusiness')">Agronegócio</div>
         </div>
 
-<<<<<<< HEAD
         <!-- Residencial -->
         <div class="conteiner">
             <div id="residential" class="content active">
@@ -170,143 +169,6 @@
             </div>
         </div>
         <script src="Script/Produto.js"></script>
-=======
-    <div class="menu-hamburguer" onclick="toggleMenu()">
-        <div class="linha"></div>
-        <div class="linha"></div>
-        <div class="linha"></div>
-    </div>
-
-    <nav id="navbar" class="navbar">
-        <ul class="header-ul-lateral">
-            <div class="tabs">
-                <div class="tab active" onclick="showTab('residential')">Residencial</div>
-                <div class="tab" onclick="showTab('business')">Empresarial</div>
-                <div class="tab" onclick="showTab('agribusiness')">Agronegócio</div>
-            </div>
-        </ul>
-    </nav>
-    <!-- Residencial -->
-    <div class="conteiner">
-        <div id="residential" class="content active">
-            <div class="card">
-                <img src="Imagens/Produtos/335-kWp01-2.jpg  " alt="Produto 1" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Residencial - 3,35kWp</h2>
-                    <p class="card-description">-Potência de 3,35kWp</p>
-                    <p class="card-description">-Instalado em solo</p>
-                    <p class="card-description">-485 Kwh de energia </p>
-                    <p class="card-description">-10 painéis solares de 335Wp cada</p>
-                    <span class="card-price">R$ 8.499,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="Imagens/Produtos/1035-kWp01.jpg" alt="Produto 2" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Residencial - 10,35 kWp</h2>
-                    <p class="card-description">-Potência de 10,35kWp</p>
-                    <p class="card-description">-Instalado no telhado</p>
-                    <p class="card-description">-1210,00 Kwh de energia</p>
-                    <p class="card-description">-23 paines solares de 450Wp cada</p>
-                    <span class="card-price">R$ 18.999,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="Imagens/Produtos/residencial.jpg" alt="Produto 3" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Residencial - 0,855 kWp</h2>
-                    <p class="card-description">-Potência de 0,855kWp</p>
-                    <p class="card-description">-Off grid</p>
-                    <p class="card-description">-120 kWh de energia </p>
-                    <p class="card-description">-3 painéis solares de 285Wp cada</p>
-                    <span class="card-price">R$ 4.299,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-        </div>
-        <!-- Empresarial -->
-        <div id="business" class="content">
-            <div class="card">
-                <img src="imagens/Produtos/16,20 kWp.jpg" alt="Produto 1" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Empresarial - 8,25kWp</h2>
-                    <p class="card-description">-Potência de 8,25kWp</p>
-                    <p class="card-description">-Instalado em telhado</p>
-                    <p class="card-description">-1.195 kWh de energia</p>
-                    <p class="card-description">-25 painéis solares de 330Wp cada</p>
-                    <span class="card-price">R$ 21.499,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imagens/Produtos/24,64.jpg" alt="Produto 2" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Empresarial - 15,6kWp</h2>
-                    <p class="card-description">-Potência de 15,6kWp</p>
-                    <p class="card-description">-Instalado em telhado</p>
-                    <p class="card-description">-2.160 kWh de energia</p>
-                    <p class="card-description">-48 painéis solares de 325Wp cada</p>
-                    <span class="card-price">R$ 42.999,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imagens/Produtos/39,20 kWp.jpg" alt="Produto 3" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Empresarial - 50,2kWp</h2>
-                    <p class="card-description">-Potência de 50,2kWp</p>
-                    <p class="card-description">-Instalado em telhado</p>
-                    <p class="card-description">-6.900 kWh de energia</p>
-                    <p class="card-description">-100 painéis solares de 500Wp cada</p>
-                    <span class="card-price">R$ 89.999,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-        </div>
-        <!-- Agronomia -->
-        <div id="agribusiness" class="content">
-            <div class="card">
-                <img src="Imagens/agricultura1.jpg" alt="Produto 1" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Agronegócio - 5,4kWp</h2>
-                    <p class="card-description">-Potência de 5,4kWp</p>
-                    <p class="card-description">-Instalado em estrutura elevada ao solo</p>
-                    <p class="card-description">-1.200 kWh de energia</p>
-                    <p class="card-description">-40 painéis solares de 135Wp cada</p>
-                    <span class="card-price">R$ 32.999,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imagens/Produtos/agro 2.jpg" alt="Produto 2" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Agronegócio - 12,2kWp</h2>
-                    <p class="card-description">-Potência de 12,2kWp</p>
-                    <p class="card-description">-Instalado em estrutura elevada ao solo</p>
-                    <p class="card-description">-2.880 kWh de energia</p>
-                    <p class="card-description">-60 painéis solares de 205Wp cada</p>
-                    <span class="card-price">R$ 59.999,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imagens/Produtos/agro 3.jpg" alt="Produto 3" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Agronegócio - 25,4kWp</h2>
-                    <p class="card-description">-Potência de 25,4kWp</p>
-                    <p class="card-description">-Instalado em estrutura elevada ao solo</p>
-                    <p class="card-description">-6.300 kWh de energia</p>
-                    <p class="card-description">-120 painéis solares de 350Wp cada</p>
-                    <span class="card-price">R$ 129.999,99</span>
-                    <button class="card-button" onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-        </div>  
-    </div>
-    <script src="Script/Produto.js"></script>
->>>>>>> 7a094baad47a68d8764c2324bf1a92ca2c1752fa
 
         <footer class="footer">
             <p>© 2024 TecnoSolar. Todos os direitos reservados.</p>
