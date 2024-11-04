@@ -11,83 +11,84 @@
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
 } */
 
-h1 {
-    text-align: center;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-}
-
+/* Container */
 .container {
     max-width: 600px;
-    margin: center;
+    margin: auto;
     background: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Título */
 h1 {
-    /* text-align: center;s */
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
     color: #333;
 }
 
-.DT_Nascimento{
-    border: 2px solid #007bff; 
-    border-radius: 5px; 
-    color: #333; 
-    font-size: 1rem; 
-    padding: 10px 15px 10px 15px; 
-    max-width: 300px; 
+/* Inputs */
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+.DT_Nascimento,
+.Endereço,
+.Produto,
+.number,
+select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1rem;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
 }
-.DT_Nascimento:hover{
-    border: color #0056b3;
-    background-color:  #f7f7f7;
+
+.DT_Nascimento:hover,
+.Endereço:hover,
+.Produto:hover,
+.number:hover {
+    border-color: #0056b3;
+    background-color: #f7f7f7;
 }
-.DT_Nascimento:focus{
+
+.DT_Nascimento:focus,
+.Endereço:focus,
+.Produto:focus,
+.number:focus {
     border-color: #0056b3;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-.Endereço,
-.Produto,
-.Senha
-{
-    border-radius: 5px;
-    color: #333; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: #333; 
-    font-size: 1rem; 
-    padding: 10px 15px 10px 15px; 
-    max-width: 300px; 
-}
-
-.Nome,
-.E-mail,
-.number,
-select {
-    border-radius: 5px;
-    color: #333; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: #333; 
-    font-size: 1rem; 
-    padding: 10px 15px 10px 15px; 
-    max-width: 300px; 
-} 
-
-input[type="submit"] {
+/* Botão */
+button {
+    background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-input[type="submit"]:hover {
-    background: #000;
+button:hover {
+    background-color: #0056b3;
     transform: scale(1.05);
 }
