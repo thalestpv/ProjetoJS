@@ -1,71 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cadastro Vip</title>
-        <link rel="stylesheet" href="CSS/cadastro.css">
-    </head>
-    <body>
-        <nav>
-            <ul class="header-ul">
-                <li><img src="imagens/parafuso.png"></li>
-                <li><label>TECNOSOLAR</label></li>
-                <li><a href="inicio.html">Início</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="cadastro.html">Cadastro VIP</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="Simulador1.html">Simulador de economia</a></li>
-                <li><a href="carrinho.html">Carrinho</a></li>
-            </ul>
-        </nav>
 
-        <div class="container">
-            <h1>Cadastro VIP para Revendedores</h1>
-            <form action="/enviar-cadastro" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required
-                    placeholder="Nome completo" class="Nome">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Vip</title>
+    <link rel="stylesheet" href="CSS/cadastro.css">
+</head>
 
-                <label for="data-nascimento">Data de Nascimento:</label>
-                <input type="date" id="data-nascimento" name="data-nascimento"
-                    required class="DT_Nascimento"><br><br>
+<body>
+    <nav>
+        <ul class="header-ul">
+            <li><img src="imagens/parafuso.png"></li>
+            <li><label>TECNOSOLAR</label></li>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="cadastro.html">Cadastro VIP</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="Simulador1.html">Simulador de economia</a></li>
+            <li><a href="carrinho.html">Carrinho</a></li>
+        </ul>
+    </nav>
 
-                <label for="cpf">CPF ou CNPJ:</label>
-                <input type="text" id="cpf" name="cpf" maxlength="14"
-                    placeholder="Ex: 000.000.000-00" required class="number">
+    <div class="container">
+        <h1>Cadastro VIP para Revendedores</h1>
+        <form action="/enviar-cadastro" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Nome completo" class="Nome">
 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required
-                    pattern="[0-9]{10,11}" placeholder="Ex: 11987654321"
-                    class="number">
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required class="DT_Nascimento"><br><br>
 
-                <label for="endereço">Endereço:</label>
-                <input type="text" id="endereço" name="endereço" required
-                    placeholder="Ex: Rua 10 lote 01 Cj B" class="Endereço">
+            <label for="cpf">CPF ou CNPJ:</label>
+            <input type="text" id="cpf" name="cpf" maxlength="14" placeholder="Ex: 000.000.000-00" required
+                class="number">
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required
-                    placeholder="Digite aqui seu E-mail" class="E-mail">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required pattern="[0-9]{10,11}"
+                placeholder="Ex: 11987654321" class="number">
 
-                <label for="produto">Produto Desejado:</label>
-                <input type="text" id="produto" name="produto" required
-                    placeholder="Ex: Placa Solar" class="Produto desejado">
+            <label for="endereço">Endereço:</label>
+            <input type="text" id="endereço" name="endereço" required placeholder="Ex: Rua 10 lote 01 Cj B"
+                class="Endereço">
 
-                <label for="senha">Senha:</label><br>
-                <input type="password" id="senha" name="senha" required
-                    placeholder="Crie sua senha"><br><br class="Senha">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite aqui seu E-mail" class="E-mail">
 
-                <label for="senha">Confirme sua Senha:</label><br>
-                <input type="password" id="senha" name="senha" required
-                    placeholder="Confirme sua senha" class="Senha"><br><br>
+            <label for="produto">Produto Desejado:</label>
+            <input type="text" id="produto" name="produto" required placeholder="Ex: Placa Solar" class="Produto">
 
-                <button
-                    onclick="alert('Cadastro realizado com sucesso!')">Cadastrar</button>
-            </form>
-        </div>
-        <footer class="footer">
-            <p>© 2024 TecnoSolar. Todos os direitos reservados.</p>
-        </footer>
-    </body>
+            <label for="senha">Senha:</label> <input type="password" id="senha" name="senha" required
+                placeholder="Crie sua senha" class="Senha">
+
+            <label for="senha">Confirme sua Senha:</label><br>
+            <input type="password" id="senha" name="senha" required placeholder="Confirme sua senha"
+                class="Senha"><br><br>
+
+            <button onclick="alert('Cadastro realizado com sucesso!')">Cadastrar</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>© 2024 TecnoSolar. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
 </html>

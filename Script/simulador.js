@@ -12,7 +12,6 @@ function calcularConsumo(){
 
     document.getElementById('resultado').innerHTML =`
         ConsumoDiario: ${consumoDiario.toFixed(2)}kWh<br>
-        consumoMensal: ${consumoMensal.toFixed(2)}kWh
-        `;
+        consumoMensal: ${consumoMensal.toFixed(2)}kWh`;
                                 
 }   

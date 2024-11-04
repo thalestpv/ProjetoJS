@@ -90,6 +90,11 @@ h1 {
   font-size: 2rem;
   color: #004aad;
 }
+.contato-L{
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;  
+}
         
 p {
   text-align: center;
@@ -143,15 +148,15 @@ form {
 
 /* Seção de contato */
 
-.contato {
+/* .contato {
 max-width: 300px;
 padding: 1rem;
 background-color: #f9f9f9;
 border-radius: 8px;
-margin: 2rem auto;
+margin: 2rem auto; 
 font-size: 1rem;
 color: #555;
-}
+} */
 
 .contato p b {
   color: #004aad;
@@ -159,11 +164,7 @@ color: #555;
 
 
 /* Responsividade */
-@media (max-width: 768px) {
-.header-ul {
-  flex-direction: column;
-}
-}
+
 form {
   width: 90%;
   padding: 1rem;
@@ -175,6 +176,8 @@ form {
   padding: 1rem;
 }
 
-
+.footer p {
+  font-size: 0.9rem;
+}
 
             
