@@ -3,38 +3,38 @@
 @import url('./main.css');
 
 /*-----Carrossel------*/
-.c-item{
+.c-item {
     height: 650px;
 }
 
-.c-img{
+.c-img {
     height: 100%;
     object-fit: cover;
     filter: brightness(0.4);
 }
 
-.slide1-subtitle{
+.slide1-subtitle {
     margin: 30px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-size: 28px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.slide1-title{
+.slide1-title {
     margin: 40px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-size: 80px;
     font-family: "Roboto Condensed";
 }
 
-.slide2-subtitle{
+.slide2-subtitle {
     margin: 40px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-size: 30px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.slide2-title{
+.slide2-title {
     margin: 50px;
     padding-top: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -42,27 +42,30 @@
     font-family: "Roboto Condensed";
 }
 
-.slide3-title{
+.slide3-title {
     margin: 30px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-size: 80px;
     font-family: "Roboto Condensed";
 }
 
-.slide3-text{
+.slide3-text {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-size: 23px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
 .card-container {
     display: flex;
-    flex-direction: column; /* Coloca os cards em uma coluna */
+    flex-direction: column;
+    /* Coloca os cards em uma coluna */
     background-color: aliceblue;
-    max-width: 400px; /* Largura máxima do contêiner */
+    max-width: 400px;
+    /* Largura máxima do contêiner */
     border-radius: 8px;
-    overflow: hidden; /* Para garantir que os cards se ajustem ao contêiner */
+    overflow: hidden;
+    /* Para garantir que os cards se ajustem ao contêiner */
 }
 
 .info-card {
@@ -91,18 +94,21 @@
 }
 
 .divider {
-    width: 100%; /* Largura total */
-    height: 1px; /* Altura da linha */
-    background-color: #ddd; /* Cor da linha */
+    width: 100%;
+    /* Largura total */
+    height: 1px;
+    /* Altura da linha */
+    background-color: #ddd;
+    /* Cor da linha */
 
 }
 
 /*-----Footer------*/
 footer {
-    background-color: #f1f1f1; 
-    text-align: center; 
-    padding: 20px; 
-    position: relative; 
-    bottom: 0; 
-    width: 100%; 
-    }
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
