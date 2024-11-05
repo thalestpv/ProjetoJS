@@ -7,9 +7,11 @@
 
 .conteiner{
     display: flex;
-    justify-content: space-around;
+    justify-content: center; 
     flex-wrap: wrap; 
-    align-items: baseline;
+    gap: 20px; 
+    /* max-width: 1200px;  */
+    margin:  auto;
 }
 
 .card {
@@ -19,9 +21,9 @@
     width: 300px;
     margin: 10px;
     display: flex;
-    flex-wrap: wrap;
-    gap:0;
+    flex-direction: column;
 }
+
 
 .card-img {
     width: 100%;
@@ -95,5 +97,6 @@
 }
 
 .content.active {
-    display: flex;
+    display: contents;
+    padding: auto;
 }
