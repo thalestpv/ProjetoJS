@@ -56,59 +56,97 @@
 }
 
 
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0f7fa;
+}
+
+header h1 {
+    color: #2f6ef8;
+    font-size: 2em;
+}
+
+header p {
+    color: #2f6ef8;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
 .card-container {
     display: flex;
     flex-direction: column;
-    /* Coloca os cards em uma coluna */
-    background-color: aliceblue;
-    max-width: 400px;
-    /* Largura máxima do contêiner */
-    border-radius: 8px;
-    overflow: hidden;
-    /* Para garantir que os cards se ajustem ao contêiner */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .info-card {
-    background-color: #ffffff;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
-    border-left: 5px solid #28a745;
-    transition: transform 0.3s;
-}
-
-.info-card:hover {
-    transform: translateY(-5px);
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .info-card h4 {
-    color: #333;
+    color: #2f6ef8;
     margin-bottom: 10px;
 }
 
 .info-card p {
-    color: #666;
-    line-height: 1.6;
-}
-
-.info-card p b {
-    color: #28a745;
+    color: #555;
 }
 
 .divider {
-    width: 100%;
-    /* Largura total */
-    height: 1px;
-    /* Altura da linha */
-    background-color: #ddd;
-    /* Cor da linha */
-
+    width: 80%;
+    max-width: 600px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 10px 0;
 }
 
-/*-----Footer------*/
-footer {
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+
+.Galeria {
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    /* background-color: #fff; */
+    /* padding: 230px; */
+    /* max-width: 800px; */
+}
+
+.Galeria img {
+    width: 50%;
+    /* max-width: 600px; */
+    height: auto;
+}
+
+.Galeria h3 {
+    color: #2f6ef8;
+    margin-bottom: 10px;
+    padding-left: 250px ;
+}
+
+.Galeria p {
+    color: #555;
+    line-height: 1.6;
+    padding-left: 30px ;
+}
+
+.Galeria > div {
+   display: flex;
+   flex-direction: column;
+}
+
+.Galeria > a > button{
+    padding: 300px ;
+}
+
+.content-odd > .Galeria:nth-child(odd) {
+    flex-direction: row-reverse;
+
 }
