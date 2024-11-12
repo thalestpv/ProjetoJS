@@ -9,6 +9,7 @@
     </head>
 
     <body>
+
         <nav>
             <ul class="header-ul">
                 <li><img src="imagens/parafuso.png"></li>
@@ -18,7 +19,10 @@
                 <li><a href="Cadastro.html">Cadastro VIP</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 <li> <a href="Simulador1.html">Simulador de economia</a></li>
-                <li><a href="carrinho.html">Carrinho</a></li>
+                <div class="cart-item" onclick="openCart()">
+                    <img src="Imagens/shoppingcartfull_compras_carr_13340.png">
+                    <span id="cartCount" class="cart-count">0</span>
+                </div>
             </ul>
         </nav>
 
@@ -30,290 +34,368 @@
         </div>
 
         <!-- Residencial -->
-        <div class="conteiner">
-            <div id="residential" class="content active">
-                <div class="card">
-                    <img src="Imagens/Produtos/335-kWp01-2.jpg  "
-                        alt="Produto 1" class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Residencial - 3,35kWp</h2>
-                        <p class="card-description">-Potência de 3,35kWp</p>
-                        <p class="card-description">-Instalado em solo</p>
-                        <p class="card-description">-485 Kwh de energia </p>
-                        <p class="card-description">-10 painéis solares de 335Wp
-                            cada</p>
-                        <span class="card-price">R$ 8.499,99</span>
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
+        <div>
+            <div class="conteiner">
+                <div id="residential" class="content active">
+                    <div class="card">
+                        <img src="Imagens/Produtos/335-kWp01-2.jpg  "
+                            alt="Produto 1" class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Residencial - 3,35kWp</h2>
+                            <p class="card-description">-Potência de 3,35kWp</p>
+                            <p class="card-description">-Instalado em solo</p>
+                            <p class="card-description">-485 Kwh de energia </p>
+                            <p class="card-description">-10 painéis solares de
+                                335Wp
+                                cada</p>
+                            <span class="card-price">R$ 8.499,99</span>
+                            <button class="card-button"
+                                onclick="addToCart('Residencial - 3,35kWp', '8.499,99')">Adicionar
+                                ao Carrinho</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="Imagens/Produtos/1035-kWp01.jpg" alt="Produto 2"
-                        class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Residencial - 10,35 kWp</h2>
-                        <p class="card-description">-Potência de 10,35kWp</p>
-                        <p class="card-description">-Instalado no telhado</p>
-                        <p class="card-description">-1210,00 Kwh de energia</p>
-                        <p class="card-description">-23 paines solares de 450Wp
-                            cada</p>
-                        <span class="card-price">R$ 18.999,99</span>
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
+                    <div class="card">
+                        <img src="Imagens/Produtos/1035-kWp01.jpg"
+                            alt="Produto 2"
+                            class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Residencial - 10,35 kWp</h2>
+                            <p class="card-description">-Potência de
+                                10,35kWp</p>
+                            <p class="card-description">-Instalado no
+                                telhado</p>
+                            <p class="card-description">-1210,00 Kwh de
+                                energia</p>
+                            <p class="card-description">-23 paines solares de
+                                450Wp
+                                cada</p>
+                            <span class="card-price">R$ 18.999,99</span>
+                            <button class="card-button"
+                                onclick="addToCart('Residencial - 10,35 kWp', '18.999,99')">Adicionar
+                                ao Carrinho</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="Imagens/Produtos/residencial.jpg" alt="Produto 3"
-                        class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Residencial - 0,855 kWp</h2>
-                        <p class="card-description">-Potência de 0,855kWp</p>
-                        <p class="card-description">-Off grid</p>
-                        <p class="card-description">-120 kWh de energia </p>
-                        <p class="card-description">-3 painéis solares de 285Wp
-                            cada</p>
-                        <span class="card-price">R$ 4.299,99</span>
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
+                    <div class="card">
+                        <img src="Imagens/Produtos/residencial.jpg"
+                            alt="Produto 3"
+                            class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Residencial - 0,855 kWp</h2>
+                            <p class="card-description">-Potência de
+                                0,855kWp</p>
+                            <p class="card-description">-Off grid</p>
+                            <p class="card-description">-120 kWh de energia </p>
+                            <p class="card-description">-3 painéis solares de
+                                285Wp
+                                cada</p>
+                            <span class="card-price">R$ 4.299,99</span>
+                            <button class="card-button"
+                                onclick="addToCart('Residencial - 0,855 kWp',  '4.299,99')">Adicionar
+                                ao Carrinho</button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Cards adicionais -->
-                <div class="card">
-                    <img src="Imagens/Produtos/resid - 5.jpg"
-                        alt="Produto 1" class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Residencial - 1,0kWp</h2>
-                        <p class="card-description">-Potência de 1,0kWp</p>
-                        <p class="card-description">-Instalação sobre telhado</p>
-                        <p class="card-description">-140 kWh de energia </p>
-                        <p class="card-description">-5 painéis solares de 200Wp cada</p>
-                        <span class="card-price">R$ 5.990,00</span>
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
+                    <!-- Cards adicionais -->
+                    <div class="card">
+                        <img src="Imagens/Produtos/resid - 5.jpg"
+                            alt="Produto 1" class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Residencial - 1,0kWp</h2>
+                            <p class="card-description">-Potência de 1,0kWp</p>
+                            <p class="card-description">-Instalação sobre
+                                telhado</p>
+                            <p class="card-description">-140 kWh de energia </p>
+                            <p class="card-description">-5 painéis solares de
+                                200Wp cada</p>
+                            <span class="card-price">R$ 5.990,00</span>
+                            <button class="card-button"
+                                onclick="addToCart('Residencial - 1,0kWp', '5.990,00')">Adicionar
+                                ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/Produtos/resid - 13.jpg"
+                            alt="Produto 1" class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Residencial - 2,6kWp</h2>
+                            <p class="card-description">-Potência de 2,6kWp</p>
+                            <p class="card-description">-Instalação em telhado
+                                plano</p>
+                            <p class="card-description">-350 kWh de energia </p>
+                            <p class="card-description">-13 painéis solares de
+                                200Wp cada</p>
+                            <span class="card-price">R$ 12.990,00</span>
+                            <button class="card-button"
+                                onclick="addToCart('Residencial - 2,6kWp', '12.990,00')">Adicionar
+                                ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Imagens/Produtos/resid - 8.webp"
+                            alt="Produto 1" class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Residencial - 1,6kWp</h2>
+                            <p class="card-description">-Potência de 1,6kWp</p>
+                            <p class="card-description">-Instalação em
+                                telhado</p>
+                            <p class="card-description">-220 kWh de energia</p>
+                            <p class="card-description">-8 painéis solares de
+                                200Wp cada</p>
+                            <span class="card-price">R$ 8.500,00</span>
+                            <button class="card-button"
+                                onclick="addToCart('Residencial - 1,6kWp', '8.500,00')">Adicionar
+                                ao Carrinho</button>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="Imagens/Produtos/resid - 13.jpg"
-                        alt="Produto 1" class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Residencial - 2,6kWp</h2>
-                        <p class="card-description">-Potência de 2,6kWp</p>
-                        <p class="card-description">-Instalação em telhado plano</p>
-                        <p class="card-description">-350 kWh de energia </p>
-                        <p class="card-description">-13 painéis solares de 200Wp cada</p>
-                        <span class="card-price">R$ 12.990,00</span>
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
+                <!-- Empresarial -->
+                <div id="business" class="content">
+                    <div class="card">
+                        <img src="imagens/Produtos/16,20 kWp.jpg"
+                            alt="Produto 1"
+                            class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Empresarial - 8,25kWp</h2>
+                            <p class="card-description">-Potência de 8,25kWp</p>
+                            <p class="card-description">-Instalado em
+                                telhado</p>
+                            <p class="card-description">-1.195 kWh de
+                                energia</p>
+                            <p class="card-description">-25 painéis solares de
+                                330Wp
+                                cada</p>
+                            <span class="card-price">R$ 21.499,99</span>
+                            <button class="card-button"
+                                onclick="addToCart('Empresarial - 8,25kWp', '21.499,99')">Adicionar
+                                ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="imagens/Produtos/24,64.jpg" alt="Produto 2"
+                            class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Empresarial - 15,6kWp</h2>
+                            <p class="card-description">-Potência de 15,6kWp</p>
+                            <p class="card-description">-Instalado em
+                                telhado</p>
+                            <p class="card-description">-2.160 kWh de
+                                energia</p>
+                            <p class="card-description">-48 painéis solares de
+                                325Wp
+                                cada</p>
+                            <span class="card-price">R$ 42.999,99</span>
+                            <button class="card-button"
+                                onclick="addToCart('Empresarial - 15,6kWp', '42.999,99')">Adicionar
+                                ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="imagens/Produtos/39,20 kWp.jpg"
+                            alt="Produto 3"
+                            class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Empresarial - 50,2kWp</h2>
+                            <p class="card-description">-Potência de 50,2kWp</p>
+                            <p class="card-description">-Instalado em
+                                telhado</p>
+                            <p class="card-description">-6.900 kWh de
+                                energia</p>
+                            <p class="card-description">-100 painéis solares de
+                                500Wp cada</p>
+                            <span class="card-price">R$ 89.999,99</span>
+                            <button class="card-button"
+                                onclick="addToCart('Empresarial - 50,2kWp', '89.999,99')">Adicionar
+                                ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!-- cards adicionais -->
+                    <div class="card">
+                        <img src="Imagens/Produtos/emp-144.jpg"
+                            alt="Produto 1" class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Empresarial - 36,0kWp</h2>
+                            <p class="card-description">-Potência de 36,0kWp</p>
+                            <p class="card-description">-Instalação em
+                                telhado</p>
+                            <p class="card-description">-4.800 kWh de energia
+                            </p>
+                            <p class="card-description">-144 painéis solares de
+                                250Wp cada</p>
+                            <span class="card-price">R$ 199.000,00</span>
+                            <button class="card-button"
+                                onclick="addToCart('Empresarial - 36,0kWp',  '199.000,00')">Adicionar
+                                ao Carrinho</button>
+                        </div>
+                    </div> <div class="card">
+                        <img src="Imagens/Produtos/emp-190.jpg"
+                            alt="Produto 1" class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Empresarial - 47,5kWp</h2>
+                            <p class="card-description">-Potência de 47,5kWp</p>
+                            <p class="card-description">-Instalado em
+                                telhado</p>
+                            <p class="card-description">-6.500 kWh de
+                                energia</p>
+                            <p class="card-description">-190 painéis solares de
+                                250Wp cada</p>
+                            <span class="card-price">R$ 275.000,00</span>
+                            <button class="card-button"
+                                onclick="addToCart('Empresarial - 47,5kWp', '275.000,00')">Adicionar
+                                ao Carrinho</button>
+                        </div>
+                    </div> <div class="card">
+                        <img src="Imagens/Produtos/emp-720.jpg"
+                            alt="Produto 1" class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Empresarial - 155,0kWp</h2>
+                            <p class="card-description">-Potência de
+                                155,0kWp</p>
+                            <p class="card-description">-Instalado em telhado de
+                                grande porte</p>
+                            <p class="card-description">-20.500 kWh de
+                                energia</p>
+                            <p class="card-description">-620 painéis solares de
+                                250Wp cada</p>
+                            <span class="card-price">R$ 780.000,00</span>
+                            <button class="card-button"
+                                onclick="addToCart('Empresarial - 155,0kWp', '780.000,00')">Adicionar
+                                ao Carrinho</button>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="Imagens/Produtos/resid - 8.webp"
-                        alt="Produto 1" class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Residencial - 1,6kWp</h2>
-                        <p class="card-description">-Potência de 1,6kWp</p>
-                        <p class="card-description">-Instalação em telhado</p>
-                        <p class="card-description">-220 kWh de energia</p>
-                        <p class="card-description">-8 painéis solares de 200Wp cada</p>
-                        <span class="card-price">R$ 8.500,00</span>
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
+                <!-- Agronomia -->
+                <div id="agribusiness" class="content">
+                    <div class="card">
+                        <img src="Imagens/agricultura1.jpg" alt="Produto 1"
+                            class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Agronegócio - 5,4kWp</h2>
+                            <p class="card-description">-Potência de 5,4kWp</p>
+                            <p class="card-description">-Instalado em estrutura
+                                elevada ao solo</p>
+                            <p class="card-description">-1.200 kWh de
+                                energia</p>
+                            <p class="card-description">-40 painéis solares de
+                                135Wp
+                                cada</p>
+                            <span class="card-price">R$ 32.999,99</span>
+                            <button class="card-button"
+                                onclick="addToCart('Agronegócio - 5,4kWp', '32.999,99')">Adicionar
+                                ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="imagens/Produtos/agro 2.jpg" alt="Produto 2"
+                            class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Agronegócio - 12,2kWp</h2>
+                            <p class="card-description">-Potência de 12,2kWp</p>
+                            <p class="card-description">-Instalado em estrutura
+                                elevada ao solo</p>
+                            <p class="card-description">-2.880 kWh de
+                                energia</p>
+                            <p class="card-description">-60 painéis solares de
+                                205Wp
+                                cada</p>
+                            <span class="card-price">R$ 59.999,99</span>
+                            <button class="card-button"
+                                onclick="addToCart('Agronegócio - 12,2kWp', '59.999,99')">Adicionar
+                                ao Carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="imagens/Produtos/agro 3.jpg" alt="Produto 3"
+                            class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Agronegócio - 25,4kWp</h2>
+                            <p class="card-description">-Potência de 25,4kWp</p>
+                            <p class="card-description">-Instalado em estrutura
+                                elevada ao solo</p>
+                            <p class="card-description">-6.300 kWh de
+                                energia</p>
+                            <p class="card-description">-500 painéis solares de
+                                350Wp cada</p>
+                            <span class="card-price">R$ 129.999,99</span>
+                            <button class="card-button"
+                                onclick="addToCart('Agronegócio - 25,4kWp', '129.999,99')">Adicionar
+                                ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!-- cards adicionais -->
+                    <div class="card">
+                        <img src="Imagens/Produtos/agro-80.jpg"
+                            alt="Produto 1" class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Agronegócio - 20,0kWp</h2>
+                            <p class="card-description">-Potência de 20,0kWp</p>
+                            <p class="card-description">-Instalação em estrutura
+                                elevada ao solo</p>
+                            <p class="card-description">-2.800 kWh de
+                                energia</p>
+                            <p class="card-description">-80 painéis solares de
+                                250Wp cada</p>
+                            <span class="card-price">R$ 115.000,00</span>
+                            <button class="card-button"
+                                onclick="addToCart('Agronegócio - 20,0kWp', '115.000,00')">Adicionar
+                                ao Carrinho</button>
+                        </div>
+                    </div> <div class="card">
+                        <img src="Imagens/Produtos/agro-140.webp"
+                            alt="Produto 1" class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Agronegócio - 35,0kWp</h2>
+                            <p class="card-description">-Potência de 35,0kWp</p>
+                            <p class="card-description">-Instalação em estrutura
+                                fixa no solo</p>
+                            <p class="card-description">-4.800 kWh de
+                                energia</p>
+                            <p class="card-description">-140 painéis solares de
+                                250Wp cada</p>
+                            <span class="card-price">R$ 185.000,00</span>
+                            <button class="card-button"
+                                onclick="addToCart('Agronegócio - 35,0kWp', '185.000,00')">Adicionar
+                                ao Carrinho</button>
+                        </div>
+                    </div> <div class="card">
+                        <img src="Imagens/Produtos/agro-200.png"
+                            alt="Produto 1" class="card-img">
+                        <div class="card-body">
+                            <h2 class="card-title">Agronegócio - 75,0kWp</h2>
+                            <p class="card-description">-Potência de 75,0kWp</p>
+                            <p class="card-description">-Instalação em estrutura
+                                elevada ao solo</p>
+                            <p class="card-description">-10.500 kWh de
+                                energia</p>
+                            <p class="card-description">-300 painéis solares de
+                                250Wp cada</p>
+                            <span class="card-price">R$ 375.000,00</span>
+                            <button class="card-button"
+                                onclick="addToCart('Agronegócio - 75,0kWp', '375.000,00')">Adicionar
+                                ao Carrinho</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Empresarial -->
-            <div id="business" class="content">
-                <div class="card">
-                    <img src="imagens/Produtos/16,20 kWp.jpg" alt="Produto 1"
-                        class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Empresarial - 8,25kWp</h2>
-                        <p class="card-description">-Potência de 8,25kWp</p>
-                        <p class="card-description">-Instalado em telhado</p>
-                        <p class="card-description">-1.195 kWh de energia</p>
-                        <p class="card-description">-25 painéis solares de 330Wp
-                            cada</p>
-                        <span class="card-price">R$ 21.499,99</span>
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="imagens/Produtos/24,64.jpg" alt="Produto 2"
-                        class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Empresarial - 15,6kWp</h2>
-                        <p class="card-description">-Potência de 15,6kWp</p>
-                        <p class="card-description">-Instalado em telhado</p>
-                        <p class="card-description">-2.160 kWh de energia</p>
-                        <p class="card-description">-48 painéis solares de 325Wp
-                            cada</p>
-                        <span class="card-price">R$ 42.999,99</span>
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="imagens/Produtos/39,20 kWp.jpg" alt="Produto 3"
-                        class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Empresarial - 50,2kWp</h2>
-                        <p class="card-description">-Potência de 50,2kWp</p>
-                        <p class="card-description">-Instalado em telhado</p>
-                        <p class="card-description">-6.900 kWh de energia</p>
-                        <p class="card-description">-100 painéis solares de
-                            500Wp cada</p>
-                        <span class="card-price">R$ 89.999,99</span>
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
 
-                <!-- cards adicionais -->
-                <div class="card">
-                    <img src="Imagens/Produtos/emp-144.jpg"
-                        alt="Produto 1" class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Empresarial - 36,0kWp</h2>
-                        <p class="card-description">-Potência de 36,0kWp</p>
-                        <p class="card-description">-Instalação em telhado</p>
-                        <p class="card-description">-4.800 kWh de energia </p>
-                        <p class="card-description">-144 painéis solares de 250Wp cada</p>
-                        <span class="card-price">R$ 199.000,00</span>
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
-                    </div>
-                </div> <div class="card">
-                    <img src="Imagens/Produtos/emp-190.jpg"
-                        alt="Produto 1" class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Empresarial - 47,5kWp</h2>
-                        <p class="card-description">-Potência de 47,5kWp</p>
-                        <p class="card-description">-Instalado em telhado</p>
-                        <p class="card-description">-6.500 kWh de energia</p>
-                        <p class="card-description">-190 painéis solares de 250Wp cada</p>
-                        <span class="card-price">R$ 275.000,00</span>
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
-                    </div>
-                </div> <div class="card">
-                    <img src="Imagens/Produtos/emp-720.jpg"
-                        alt="Produto 1" class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Empresarial - 155,0kWp</h2>
-                        <p class="card-description">-Potência de 155,0kWp</p>
-                        <p class="card-description">-Instalado em telhado de grande porte</p>
-                        <p class="card-description">-20.500 kWh de energia</p>
-                        <p class="card-description">-620 painéis solares de 250Wp cada</p>
-                        <span class="card-price">R$ 780.000,00</span>
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
+            <!-- carrinho de comprae -->
+            <div id="cart" class="cart">
+
+                <h2>Carrinho</h2>
+                <ul id="cartItems">
+                    <!-- none -->
+                </ul>
+                <p id="totalPrice">total: R$0,00</p>
+                <a href="#" class="close-cart" onclick="closeCart()"> Fechar
+                    Carrinho</a>
             </div>
-            <!-- Agronomia -->
-            <div id="agribusiness" class="content">
-                <div class="card">
-                    <img src="Imagens/agricultura1.jpg" alt="Produto 1"
-                        class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Agronegócio - 5,4kWp</h2>
-                        <p class="card-description">-Potência de 5,4kWp</p>
-                        <p class="card-description">-Instalado em estrutura
-                            elevada ao solo</p>
-                        <p class="card-description">-1.200 kWh de energia</p>
-                        <p class="card-description">-40 painéis solares de 135Wp
-                            cada</p>
-                        <span class="card-price">R$ 32.999,99</span>
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="imagens/Produtos/agro 2.jpg" alt="Produto 2"
-                        class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Agronegócio - 12,2kWp</h2>
-                        <p class="card-description">-Potência de 12,2kWp</p>
-                        <p class="card-description">-Instalado em estrutura
-                            elevada ao solo</p>
-                        <p class="card-description">-2.880 kWh de energia</p>
-                        <p class="card-description">-60 painéis solares de 205Wp
-                            cada</p>
-                        <span class="card-price">R$ 59.999,99</span>
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="imagens/Produtos/agro 3.jpg" alt="Produto 3"
-                        class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Agronegócio - 25,4kWp</h2>
-                        <p class="card-description">-Potência de 25,4kWp</p>
-                        <p class="card-description">-Instalado em estrutura
-                            elevada ao solo</p>
-                        <p class="card-description">-6.300 kWh de energia</p>
-                        <p class="card-description">-500 painéis solares de
-                            350Wp cada</p>
-                        <span class="card-price">R$ 129.999,99</span>
 
-                        <button class="card-button"
-                            onclick="addToCart()">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-            
+            <script src="Script/Produto.js"></script>
 
-            <!-- cards adicionais -->
-            <div class="card">
-                <img src="Imagens/Produtos/agro-80.jpg"
-                    alt="Produto 1" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Agronegócio - 20,0kWp</h2>
-                    <p class="card-description">-Potência de 20,0kWp</p>
-                    <p class="card-description">-Instalação em estrutura elevada ao solo</p>
-                    <p class="card-description">-2.800 kWh de energia</p>
-                    <p class="card-description">-80 painéis solares de 250Wp cada</p>
-                    <span class="card-price">R$ 115.000,00</span>
-                    <button class="card-button"
-                        onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div> <div class="card">
-                <img src="Imagens/Produtos/agro-140.webp"
-                    alt="Produto 1" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Agronegócio - 35,0kWp</h2>
-                    <p class="card-description">-Potência de 35,0kWp</p>
-                    <p class="card-description">-Instalação em estrutura fixa no solo</p>
-                    <p class="card-description">-4.800 kWh de energia</p>
-                    <p class="card-description">-140 painéis solares de 250Wp cada</p>
-                    <span class="card-price">R$ 185.000,00</span>
-                    <button class="card-button"
-                        onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div> <div class="card">
-                <img src="Imagens/Produtos/agro-200.png"
-                    alt="Produto 1" class="card-img">
-                <div class="card-body">
-                    <h2 class="card-title">Agronegócio - 75,0kWp</h2>
-                    <p class="card-description">-Potência de 75,0kWp</p>
-                    <p class="card-description">-Instalação em estrutura elevada ao solo</p>
-                    <p class="card-description">-10.500 kWh de energia</p>
-                    <p class="card-description">-300 painéis solares de 250Wp cada</p>
-                    <span class="card-price">R$ 375.000,00</span>
-                    <button class="card-button"
-                        onclick="addToCart()">Adicionar ao Carrinho</button>
-                </div>
-            </div>
-        </div>
-    </div>
+            <footer class="footer">
+                <p>© 2024 TecnoSolar. Todos os direitos reservados.</p>
+            </footer>
+        </body>
 
-        <script src="Script/Produto.js"></script>
-
-        <footer class="footer">
-            <p>© 2024 TecnoSolar. Todos os direitos reservados.</p>
-        </footer>
-    </body>
-
-</html>
+    </html>

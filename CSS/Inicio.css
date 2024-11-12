@@ -58,7 +58,7 @@
 .conteiner {
     display: flex;
     text-align: center;
-    padding-left: 350px;
+    padding-left: 250px;
 }
 
 .conteiner>div>div>p {
@@ -66,7 +66,7 @@
 }
 
 div>h2 {
-    padding-left: 750px;
+    padding-left: 650px;
     font-size: 45px;
 }
 
